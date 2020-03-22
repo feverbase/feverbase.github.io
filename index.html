@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -114,9 +113,15 @@
             line-height: 1.65em;
             word-wrap: break-word
         }
+
+        table.contributors {
+            text-align: center;
+            vertical-align: middle;
+            table-layout: fixed;
+            width: 100%;
+        }
     </style>
 </head>
-
 <body>
     <div class="center">
         <h1>Feverbase</h1>
@@ -124,20 +129,42 @@
     </div>
     <hr />
     <p>We're an international group of researchers collecting data about what's worked to fight COVID-19.
-       We're particularly interested in how well repurposed drugs (e.g. chloroquine, hydroxychloroquine,
-       favipiravir) work. We keep all data private and will collate the information into best practices for
-       clinicians and policy-makers to treat the pandemic.</p>
+        We're particularly interested in how well repurposed drugs (e.g. chloroquine, hydroxychloroquine,
+        favipiravir) work. We keep all data private and will collate the information into best practices for
+        clinicians and policy-makers to treat the pandemic.</p>
 
     <p><strong>How can I help?</strong></p>
     <p>Send an email to <a href="mailto:private@feverbase.com">private@feverbase.com</a> with patient outcome
-       information from your site. We're looking for patient information (such as age, sex, and comorbidities)
-       and treatment information (drug, dose, timing) matched with the clinical outcome.</p>
+        information from your site. We're looking for patient information (such as age, sex, and comorbidities)
+        and treatment information (drug, dose, timing) matched with the clinical outcome.</p>
 
     <p><strong>Who is behind this?</strong></p>
     <p>This project is supported by researchers at Stanford and MIT.</p>
 
+    <table class="contributors">
+        <tr>
+            <td>
+                <img class="prof" src="assets/liphardt.jpg" />
+            </td>
+            <td>
+                <img class="prof" src="assets/boyden.jpg" />
+            </td>
+            <td>
+                <img class="prof" src="assets/deming.jpg" />
+            </td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td>Jan Liphardt</td>
+            <td>Ed Boyden</td>
+            <td>Laura Deming</td>
+        </tr>
+        <tr>
+            <td>Stanford University</td>
+            <td>MIT</td>
+            <td>The Longevity Fund</td>
+        </tr>
+    </table>
     <hr />
-
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-41516705-6']);
@@ -149,5 +176,4 @@
         })();
     </script>
 </body>
-
 </html>
