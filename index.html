@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Feverbase</title>
     <style type="text/css">
+
+        /* Proxima Nova */
+        @font-face {
+	    src:url("/assets/fonts/Proxima Nova/proximanova-bold-webfont.ttf");
+	    font-family: "Proxima Nova"; font-weight: 700;
+	}
+      
+	@font-face {
+	    src:url("/assets/fonts/Proxima Nova/proximanova-semibold-webfont.ttf");
+	    font-family: "Proxima Nova"; font-weight: 500;
+	}
+	
+	@font-face {
+	    src:url("/assets/fonts/Proxima Nova/proximanova-light-webfont.ttf");
+	    font-family: "Proxima Nova"; font-weight: 300;
+	}
+      
+	@font-face {
+	    src:url("/assets/fonts/Proxima Nova/proximanova-regular-webfont.ttf");
+	  font-family: "Proxima Nova"; font-weight: 400;
+	}
+	
         * {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -22,7 +44,7 @@
             line-height: 20px;
             font-weight: normal;
             font-style: normal;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: -apple-system, BlinkMacSystemFont, "Proxima Nova", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             color: #333333;
             padding: 20px;
             margin: 0;
@@ -140,12 +162,38 @@
             line-height: 1.65em;
             word-wrap: break-word
         }
+
+	.center .nav {
+	    margin-top: 25px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+	    font-weight: bold;
+	}
+
+	.nav a {
+	    display: inline;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    font-size: 12pt;
+	    text-decoration: none;
+	    border: 0;
+	    color: #999;
+	}
+
+	.nav a:hover {
+	    color: #000;
+	}
     </style>
 </head>
 <body>
     <div class="center">
         <h1>Feverbase</h1>
         <span>Finding the best, and fastest, way to beat COVID-19.</span>
+	<div class="nav">
+          <a href="/">About</a>
+          <a href="https://search.feverbase.org">Trial Search</a>
+        </div>
     </div>
     <hr />
     <p>
